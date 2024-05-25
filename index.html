@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raijan's Portfolio- Portfolio</title>
+    <style>
+      body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('assets/Background1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            background-color: #020200;
+        }
+        @font-face {
+            font-family: 'lilitaone';
+            src: url('../assets/lilitaone.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'poppins';
+            src: url('../assets/poppins.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+        header {
+            font-family: 'poppins', Arial, sans-serif;
+            background-color: #ecaf62;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+	    font-family: 'poppins', Arial, sans-serif;
+            margin: 0;
+            font-size: 36px;
+            color: #333;
+	    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h2 {
+            font-family: 'poppins', Arial, sans-serif;
+        }
+        footer {
+   	    background-color: #333;
+    	    color: #fff;
+    	    text-align: center;
+   	    padding: 20px;
+   	    width: 100%;
+    	    margin-top: auto;
+	}
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+            padding-bottom: 60px;
+        }
+        .portfolio-item {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 24px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            position: relative;
+        }
+        .portfolio-item:hover {
+            background-color: #e0e0e0;
+            transform: scale(1.05);
+        }
+        .portfolio-link {
+            color: #007bff;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            display: block;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .portfolio-itemp2 {
+        background-image: url('assets/uc.jpg');
+        background-size: cover;
+        background-color: #f0f0f0;
+        color: #333;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 25px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        position: relative;
+}
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Raijan's Portfolio</h1>
+</header>
+
+<div class="container">
+    <div class="portfolio-item">
+        <h2>Basic Information</h2>
+        <p>In this page you can find my basic information</p>
+        <button class="button" onclick="window.location.href = 'sub/mybasic.html';">View</button>
+    </div>
+    <div class="portfolio-item">
+        <h2>About Me</h2>
+        <p>In this page you can know more about me.</p>
+        <button class="button" onclick="window.location.href = 'sub/page2.html';">View</button>
+    </div>
+    <div class="portfolio-item">
+        <h2>My Socials</h2>
+        <p>In this page you can check my social media accounts.</p>
+        <button class="button" onclick="window.location.href = 'sub/page3.html';">View</button>
+    </div>
+    <div class="portfolio-item">
+        <h2>My Interests</h2>
+        <p>In this page you can check my interest and add me
+         as a friend in a game.</p>
+        <button class="button" onclick="window.location.href = 'sub/page4.html';">View</button>
+    </div>
+</div>
+
+<footer id="footer">
+    <p>&copy; 2024 RDP - All Rights Reserved</p>
+</footer>
+
+<script>
+    window.addEventListener('scroll', function() {
+        var footer = document.getElementById('footer');
+        if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+            footer.style.bottom = '100';
+        } else {
+            footer.style.bottom = '-100px';
+        }
+    });
+</script>
+
+</body>
+</html>>
