@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raijan's Portfolio - Interests</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #c7b98e;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        html {
+            height: 100%;
+        }
+        @font-face {
+            font-family: 'lilitaone';
+            src: url('../assets/lilitaone.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'poppins';
+            src: url('../assets/poppins.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+        header {
+            font-family: 'poppins', Arial, sans-serif;
+            background-color: #ecaf62;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            width: 100%;
+        }
+        h1 {
+            margin: 0;
+            font-size: 36px;
+            color: #333;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+        }
+        .container {
+            font-family: 'poppins', Arial, sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+            flex-grow: 1;
+        }
+        h2 {
+            font-size: 34px;
+            font-family: 'lilitaone', Arial, sans-serif;
+            margin-top: auto;
+        }
+        .interests {
+            margin-bottom: 20px;
+        }
+        .interest-box p {
+            color: #333;
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+        .interest-box button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+        .interest-box button:hover {
+            background-color: #0056b3;
+        }
+        button {
+            background-color: #333;
+            color: #c7c7c7;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .a {
+            color: #0018ff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .a:hover {
+            color: #fff12b;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Raijan's Portfolio</h1>
+</header>
+
+<div class="container">
+    <h2>My Interests</h2>
+    <div class="interests">
+        <div class="interest-box">
+            <p>I like playing games. One of them is Mobile Legends.</p>
+            <p>You can add me so we can play. Copy my ID here (474782585) and launch the game. My highest rank in the game is Mythic with 18 stars. I barely playthis game that's why Mythic 18 stars is only my highest rank.</p>
+            <button onclick="copyToClipboard('474782585')">Play</button>
+            
+            <p>I also play COD:M. Copy my UID (7000953934000947201) or click the button below.</p>
+            <div class="portfolio-item project2">                
+                <p>I also play this game sometimes if someone will ask me to play because my phone will overheat and sometimes lag. But if you want to play with me just message me in one of my <a class="a" onclick="window.location.href = 'page3.html';">social accounts.</a></p>
+                <button class="button" onclick="copyTextAndOpenWebsite()">View</button>
+                
+                <p>Another game I also play is Roblox. On this day I'm too addicted to Roblox. You can add me as a friend or follow via the button below</p>
+            </div>
+            <button onclick="window.location.href = '../index.html';">Back to Portfolio</button>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 RDP - All Rights Reserved</p>
+</footer>
+
+<script>
+function copyTextAndOpenWebsite() {
+    const textToCopy = "7000953934000947201";
+    
+    navigator.clipboard.writeText(textToCopy).then(() => {
+        console.log('Text copied to clipboard');
+        window.open('https://invite.codm.garena.com/system_en_SG.html'); // Replace with your URL
+    }).catch(err => {
+        console.error('Failed to copy text: ', err);
+    });
+}
+</script>
+
+</body>
+</html>

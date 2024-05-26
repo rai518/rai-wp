@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raijan's Portfolio - Social Media</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #c7b98e;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure the body takes up at least the full height of the viewport */
+        }
+        @font-face {
+            font-family: 'lilitaone';
+            src: url('../assets/lilitaone.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'poppins';
+            src: url('../assets/poppins.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+        header {
+            font-family: 'poppins', Arial, sans-serif; /* Apply Poppins font to header */
+            background-color: #ecaf62;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            margin: 0;
+            font-size: 36px;
+            color: #333;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            margin-top: auto;        }
+        .container {
+            font-family: 'poppins', Arial, sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        h2 {
+            font-size: 34px;
+            font-family: 'lilitaone', Arial, sans-serif;
+            margin-top: auto;
+	    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+
+        }
+        .social-media {
+            margin-bottom: 20px;
+        }
+        .social-media-box {
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .social-media p {
+            color: #333;
+            font-size: 22px;
+            margin: auto;
+        }
+        .social-media a {
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            display: block;
+            font-size: 18px;
+        }
+        .social-media a:hover {
+            color: #ecaf62;
+        }
+        .social-media button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 10px; /* Added margin to separate buttons */
+        }
+        .social-media button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Raijan's Portfolio</h1>
+</header>
+
+<div class="container">
+    <h2>My Social Media Accounts</h2>
+    <div class="social-media">
+        <div class="social-media-box">
+            <p>Facebook</p>
+            <button onclick="window.location.href = 'https://www.facebook.com/raijan.palmitos.1/';">Visit Facebook</button>
+        </div>
+        <div class="social-media-box">
+            <p>Instagram</p>
+            <button onclick="window.location.href = 'https://www.instagram.com/jann_p18?igsh=YmVpZ3N6azJ5Mm4y';">Visit Instagram</button>
+        </div>
+        <div class="social-media-box">
+            <p>TikTok</p>
+            <button onclick="window.location.href = 'https://www.tiktok.com/@raiji.18?_t=8mdoqovpOWl&_r=1';">Visit TikTok</button>
+        </div>
+        <div class="social-media-box">
+            <p>Visit Discord</p>
+            <button onclick="window.location.href = 'https://discord.com/users/1104244559795470420';">Visit Discord</button>
+        </div>
+        <button onclick="window.location.href = '../index.html';">Back to Portfolio</button>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 RDP - All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
