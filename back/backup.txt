@@ -438,7 +438,8 @@
             text-align: center;
             padding: 20px;
             width: 100%;
-            margin-top: auto;        }
+            margin-top: auto;        
+	}
         .container {
             font-family: 'poppins', Arial, sans-serif;
             max-width: 800px;
@@ -504,18 +505,18 @@
     <div class="social-media">
         <div class="social-media-box">
             <p>Facebook</p>
-            <button onclick="window.location.href = 'https://www.facebook.com/raijan.palmitos.1/';">Visit Facebook</button>
+            <button onclick="window.location.href = 'https://www.facebook.com/raijan.palmitos.1/';">Visit on Facebook</button>
         </div>
         <div class="social-media-box">
             <p>Instagram</p>
-            <button onclick="window.location.href = 'https://www.instagram.com/jann_p18?igsh=YmVpZ3N6azJ5Mm4y';">Visit Instagram</button>
+            <button onclick="window.location.href = 'https://www.instagram.com/jann_p18?igsh=YmVpZ3N6azJ5Mm4y';">Visit on Instagram</button>
         </div>
         <div class="social-media-box">
             <p>TikTok</p>
-            <button onclick="window.location.href = 'https://www.tiktok.com/@raiji.18?_t=8mdoqovpOWl&_r=1';">Visit TikTok</button>
+            <button onclick="window.location.href = 'https://www.tiktok.com/@raiji.18?_t=8mdoqovpOWl&_r=1';">Visit on TikTok</button>
         </div>
         <div class="social-media-box">
-            <p>Visit Discord</p>
+            <p>Visit on Discord</p>
             <button onclick="window.location.href = 'https://discord.com/users/1104244559795470420';">Visit Discord</button>
         </div>
         <button onclick="window.location.href = '../index.html';">Back to Portfolio</button>
@@ -528,6 +529,7 @@
 
 </body>
 </html>
+
 
 ---------------------------Page 4----------------------------
 
@@ -569,6 +571,7 @@
             padding: 20px;
             text-align: center;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            width: 100%;
         }
         h1 {
             margin: 0;
@@ -659,7 +662,8 @@
                 <p>I also play this game sometimes if someone will ask me to play because my phone will overheat and sometimes lag. But if you want to play with me just message me in one of my <a class="a" onclick="window.location.href = 'page3.html';">social accounts.</a></p>
                 <button class="button" onclick="copyTextAndOpenWebsite()">View</button>
                 
-                <p>Another game I also play is Roblox. On this day I'm too addicted to Roblox. You can add me as a friend or follow via the button below</p>
+                <p>Another game I also play is Roblox. On this day I'm too addicted to Roblox. You can add me as a friend or follow my account via the button below</p>
+		<button onclick="window.location.href = 'https://www.roblox.com/users/2516657331/profile';">Play</button>
             </div>
             <button onclick="window.location.href = '../index.html';">Back to Portfolio</button>
         </div>
@@ -685,4 +689,3 @@ function copyTextAndOpenWebsite() {
 
 </body>
 </html>
-

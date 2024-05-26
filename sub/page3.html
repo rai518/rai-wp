@@ -4,135 +4,203 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raijan's Portfolio - Social Media</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #c7b98e;
-            color: #333;
+            color: white;
             margin: 0;
             padding: 0;
             display: flex;
-            flex-direction: column;
-            min-height: 100vh; /* Ensure the body takes up at least the full height of the viewport */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
-        @font-face {
-            font-family: 'lilitaone';
-            src: url('../assets/lilitaone.woff2') format('woff2');
-            font-weight: normal;
-            font-style: normal;
-        }
-        @font-face {
-            font-family: 'poppins';
-            src: url('../assets/poppins.woff2') format('woff2');
-            font-weight: normal;
-            font-style: normal;
-        }
-        header {
-            font-family: 'poppins', Arial, sans-serif; /* Apply Poppins font to header */
-            background-color: #ecaf62;
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        h1 {
-            margin: 0;
-            font-size: 36px;
-            color: #333;
-            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            width: 100%;
-            margin-top: auto;        }
-        .container {
-            font-family: 'poppins', Arial, sans-serif;
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 0 20px;
-        }
-        h2 {
-            font-size: 34px;
-            font-family: 'lilitaone', Arial, sans-serif;
-            margin-top: auto;
-	    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 
-        }
-        .social-media {
-            margin-bottom: 20px;
-        }
-        .social-media-box {
+        .profile-card {
+            background-color: #262626;
+            border-radius: 10px;
             padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            margin-bottom: 20px;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 500px;
+            display: flex;
+            align-items: center;
         }
-        .social-media p {
-            color: #333;
-            font-size: 22px;
-            margin: auto;
+
+        .profile-picture {
+            flex-shrink: 0;
         }
-        .social-media a {
-            color: #333;
+
+        .profile-picture img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .profile-details {
+            margin-left: 20px;
+            flex: 1;
+        }
+
+        .profile-details h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .subtitle {
+            margin: 5px 0;
+            color: #999;
+            font-size: 14px;
+        }
+
+        .description {
+            margin: 10px 0;
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: flex-end;
+        }
+
+        .button {
             text-decoration: none;
-            transition: color 0.3s ease;
-            display: block;
-            font-size: 18px;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            width: 200px;
+            justify-content: center;
         }
-        .social-media a:hover {
-            color: #ecaf62;
+
+        .button span {
+            margin-left: 10px;
         }
-        .social-media button {
-            background-color: #007bff;
-            color: #fff;
+
+        .button i {
+            margin-right: 10px;
+        }
+
+        .button.blue {
+            background-color: #3498db;
+        }
+
+        .button.blue::after {
+            content: ' ';
+            background: #0077b5;
+            padding: 0 10px;
+            border-radius: 0 5px 5px 0;
+        }
+
+        .button.purple {
+            background-color: #9b59b6;
+        }
+
+        .button.purple::after {
+            content: ' ';
+            background: #23292f;
+            padding: 0 10px;
+            border-radius: 0 5px 5px 0;
+        }
+
+        .button.red {
+            background-color: #e74c3c;
+        }
+
+        .button.red::after {
+            content: ' ';
+            background: #ff0000;
+            padding: 0 10px;
+            border-radius: 0 5px 5px 0;
+        }
+
+        .button.gray {
+            background-color: #707070;
+        }
+
+        .button.gray::after {
+            content: ' ';
+            background: #404040;
+            padding: 0 10px;
+            border-radius: 0 5px 5px 0;
+        }
+
+        .button:hover {
+            transform: scale(1.05);
+        }
+
+        .button.blue:hover {
+            background-color: #2980b9;
+        }
+
+        .button.purple:hover {
+            background-color: #8e44ad;
+        }
+
+        .button.red:hover {
+            background-color: #c0392b;
+        }
+
+        .button.gray:hover {
+            background-color: #505050;
+        }
+	
+	.but {
+	    background-color: #333;
+            color: #c7c7c7;
             border: none;
             padding: 10px 20px;
             border-radius: 5px;
             font-size: 16px;
             cursor: pointer;
-            transition: background-color 0.3s ease;
-            margin-top: 10px; /* Added margin to separate buttons */
-        }
-        .social-media button:hover {
-            background-color: #0056b3;
-        }
+            transition: background-color 0.3s ease, transform 0.3s ease;
+	}
+	.but:hover {
+           background-color: #444;
+	   transform: scale(1.05);
+	}
     </style>
 </head>
 <body>
+    <div class="profile-card">
+        <div class="profile-picture">
+            <img src="../assets/pfp.jpg" alt="Raijan's Profile Picture">
+        </div>
+        <div class="profile-details">
+            <h2>Raijan D. Palmitos</h2>
+            <p class="subtitle">My Social Accounts</p>
+            <p class="description">Some of my social accounts are not added yet. They will be added on the future updates.</p>
+            <div class="buttons">
+                <a href="https://www.facebook.com/raijan.palmitos.1/" class="button blue">
+                    <i class="fab fa-facebook-f"></i>
+                    <span>Facebook</span>
+                </a>
+                <a href="https://www.instagram.com/jann_p18?igsh=YmVpZ3N6azJ5Mm4y" class="button red">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="https://www.tiktok.com/@raiji.18?_t=8mdoqovpOWl&_r=1" class="button gray">
+                    <i class="fab fa-tiktok"></i>
+                    <span>Tiktok</span>
+                </a>
+                <a href="https://discord.com/users/1104244559795470420" class="button purple">
+                    <i class="fab fa-discord"></i>
+                    <span>Discord</span>
+                </a>
+		<button class="but" onclick="window.location.href = '../index.html';">Back to Portfolio</button>
 
-<header>
-    <h1>Raijan's Portfolio</h1>
-</header>
-
-<div class="container">
-    <h2>My Social Media Accounts</h2>
-    <div class="social-media">
-        <div class="social-media-box">
-            <p>Facebook</p>
-            <button onclick="window.location.href = 'https://www.facebook.com/raijan.palmitos.1/';">Visit Facebook</button>
+            </div>
         </div>
-        <div class="social-media-box">
-            <p>Instagram</p>
-            <button onclick="window.location.href = 'https://www.instagram.com/jann_p18?igsh=YmVpZ3N6azJ5Mm4y';">Visit Instagram</button>
-        </div>
-        <div class="social-media-box">
-            <p>TikTok</p>
-            <button onclick="window.location.href = 'https://www.tiktok.com/@raiji.18?_t=8mdoqovpOWl&_r=1';">Visit TikTok</button>
-        </div>
-        <div class="social-media-box">
-            <p>Visit Discord</p>
-            <button onclick="window.location.href = 'https://discord.com/users/1104244559795470420';">Visit Discord</button>
-        </div>
-        <button onclick="window.location.href = '../index.html';">Back to Portfolio</button>
     </div>
-</div>
-
-<footer>
-    <p>&copy; 2024 RDP - All Rights Reserved</p>
-</footer>
-
 </body>
 </html>
