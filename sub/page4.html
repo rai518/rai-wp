@@ -125,11 +125,12 @@
             <p>I also play COD:M. Copy my UID (7000953934000947201) or click the button below.</p>
             <div class="portfolio-item project2">                
                 <p>I also play this game sometimes if someone will ask me to play because my phone will overheat and sometimes lag. But if you want to play with me just message me in one of my <a class="a" onclick="window.location.href = 'page3.html';">social accounts.</a></p>
-                <button class="button" onclick="copyTextAndOpenWebsite()">View</button>
+                <button class="button" onclick="copyTextAndOpenWebsite()">Copy UID and Play</button>
                 
                 <p>Another game I also play is Roblox. On this day I'm too addicted to Roblox. You can add me as a friend or follow my account via the button below</p>
 		<button onclick="window.location.href = 'https://www.roblox.com/users/2516657331/profile';">Play</button>
-		<p>I also play table tennis as my sport.</p>
+		    
+		<p>I also play table tennis as my sport. If you want to play with me, just message me in any of my social accounts.</p>
             </div>
             <button onclick="window.location.href = '../index.html';">Back to Portfolio</button>
         </div>
@@ -145,8 +146,8 @@ function copyTextAndOpenWebsite() {
     const textToCopy = "7000953934000947201";
     
     navigator.clipboard.writeText(textToCopy).then(() => {
-        console.log('Text copied to clipboard');
-        window.open('https://invite.codm.garena.com/system_en_SG.html'); // Replace with your URL
+        alert('UID copied, go and open the game.');
+        window.open('https://invite.codm.garena.com/system_en_SG.html');
     }).catch(err => {
         console.error('Failed to copy text: ', err);
     });
